@@ -1,0 +1,145 @@
+.features {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #2d1b2e 0%, #3d1f3d 50%, #4a2040 100%);
+  position: relative;
+}
+
+.features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 107, 157, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(196, 69, 105, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.feature-reverse {
+  direction: rtl;
+}
+
+.feature-reverse > * {
+  direction: ltr;
+}
+
+.feature-content {
+  padding: 2rem;
+}
+
+.feature-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.feature-description {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.feature-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  background: transparent;
+  border: 2px solid #ff6b9d;
+  color: #ff6b9d;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.feature-cta:hover {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 107, 157, 0.3);
+}
+
+.feature-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.visual-card {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  aspect-ratio: 4/3;
+}
+
+.visual-card:hover {
+  transform: scale(1.03) rotate(1deg);
+}
+
+.visual-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.visual-card:hover .visual-image {
+  transform: scale(1.1);
+}
+
+@media (max-width: 968px) {
+  .feature-block {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .feature-reverse {
+    direction: ltr;
+  }
+
+  .feature-title {
+    font-size: 2rem;
+  }
+
+  .visual-card {
+    max-width: 100%;
+  }
+
+  .visual-image {
+    height: 250px;
+  }
+}
