@@ -18,7 +18,7 @@ const portfolioItems = [
     id: 3,
     title: "Pronto para as redes",
     description: "Vídeos otimizados para cada plataforma. Legendas, efeitos sonoros, cortes dinâmicos e muito mais.",
-    image: "https://s2-techtudo.glbimg.com/A3Tsb76Zri75LyGx61bHTYjMVHE=/0x0:695x440/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/d/K/fA4F3tSma9jSfN7p42Lw/instagram-30s.jpg"
+    image: "https://p16-capcut-cms-sg-useast5.capcutcdn-us.com/tos-useast5-i-6rr7idwo9f-tx/af2b1ded299744a0945722fd6f9d3e73~tplv-6rr7idwo9f-image.image"
   }
 ];
 
