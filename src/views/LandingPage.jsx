@@ -55,7 +55,7 @@ const LandingPage = () => {
               <div className="footer-column">
                 <h4>Contato</h4>
                 <ul>
-                  <li><a href="https://wa.me/5562981958653">WhatsApp</a></li>
+                  <li><a href="https://wa.me/5562931958653">WhatsApp</a></li>
                   <li><a href="mailto:rodrigueskarinyedicoes@gmail.com">Email</a></li>
                   <li><a href="#instagram">Instagram</a></li>
                 </ul>
