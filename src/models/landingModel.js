@@ -99,7 +99,7 @@ export const landingData = {
   ],
 
   contact: {
-    whatsapp: "+5562931958653",
+    whatsapp: "+5562993195853",
     email: "rodrigueskarinyedicoes@gmail.com",
     message: "Olá! Gostaria de saber mais sobre os serviços de edição de vídeo."
   }
